@@ -314,7 +314,6 @@ section .title::after {
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
-  background: #222;
   text-align: center;
   border-radius: 6px;
   padding: 50px 25px;
@@ -324,6 +323,14 @@ section .title::after {
 .services .serv-content .card:hover {
   background: var(--primary-color);
 }
+
+.services .serv-content .card.viettel:hover {
+  background: #fa2020;
+}
+.services .serv-content .card.dxc:hover {
+  background: #603494;
+}
+
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
@@ -335,14 +342,13 @@ section .title::after {
   color: var(--primary-color);
   transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i {
-  color: #fff;
-}
+
 .services .serv-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
 /* skills section styling */
 .skills .title::after {
   content: 'what i know';
