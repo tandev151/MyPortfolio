@@ -319,6 +319,7 @@ section .title::after {
   padding: 50px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  height: 440px;
 }
 .services .serv-content .card:hover {
   background: var(--primary-color);
@@ -333,6 +334,14 @@ section .title::after {
 
 .services .serv-content .card .box {
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.box .time {
+  margin-top: auto;
 }
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
